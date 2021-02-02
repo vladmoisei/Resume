@@ -2,8 +2,8 @@
     <div class="ajax-page-wrapper">
         <div class="ajax-page-nav">
             <div class="nav-item ajax-page-prev-next">
-                <a class="ajax-page-load" href="portfolio-2.html"><i class="lnr lnr-chevron-left"></i></a>
-                <a class="ajax-page-load" href="portfolio-4.html"><i class="lnr lnr-chevron-right"></i></a>
+                <a class="ajax-page-load" href="portfolio-3.html"><i class="lnr lnr-chevron-left"></i></a>
+                <a class="ajax-page-load" href="portfolio-5.html"><i class="lnr lnr-chevron-right"></i></a>
             </div>
             <div class="nav-item ajax-page-close-button">
                 <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
@@ -11,12 +11,12 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1>Portfolio Plc Dashboard</h1>
+            <h1>Maintenance Tracking Breakdowns</h1>
         </div>
 
         <div class="row">
             <div class="col-sm-8 col-md-8 portfolio-block">
-                <img src="./img/portfolio/full/PLCDashboard.gif" alt="Plc Dashboard Animation" />
+                <img src="./img/portfolio/full/ProblemsView.gif" alt="Maintenance breakdowns" />
                 <!-- <div class="owl-carousel portfolio-page-carousel">
                     <div class="item">
                         <img src="img/portfolio/full/1.jpg" alt="" />
@@ -59,16 +59,18 @@
                     </div>
                     <ul class="project-general-info">
                         <li><p><i class="fa fa-user"></i> Vlad Moisei</p></li>
-                        <li><p><i class="fa fa-globe"></i> <a href="https://github.com/vladmoisei/Don-PlcDashboard_and_Reports" target="_blank">Github: Link to Source Code</a></p></li>
-                        <li><p><i class="fa fa-calendar"></i> 16 January, 2020</p></li>
+                        <li><p><i class="fa fa-globe"></i> <a href="https://github.com/vladmoisei/Don-AutoMaintenance" target="_blank">Github: Link to Source Code</a></p></li>
+                        <li><p><i class="fa fa-calendar"></i> 26 January, 2021</p></li>
                     </ul>
 
                     <p class="text-justify">
-                        Dashboard and report machines stopping time by cause.
+                        Tracking problems per machines.
                         <ul>
-                            <li>OPC Server (Create new PLC to read signals)</li>
-                            <li>Dashboard: to see live the status of machines (working/ stopped and period in time, chart of reasons for stopping in percent)</li>
-                            <li>Reports: register all breackdown time and reason of stopeges for each Plc, and send automatically a mail dailly with report. Also the posibility to extract in excel data for a desired period</li>
+                            <li>Operator, depending on the machine, inputs the reason why the machine is stopped. The status of the problem is unsolved.</li>
+                            <li>The maintenance department receives an email with the problem imputed by the operator. List of mail is customisable with the interested persons.</li>
+                            <li>Data is stored and retrieved from SQL Server.</li>
+                            <li>Different access levels by user's role.</li>
+                            <li>CRUD operations; Sort, order by, Filter, Search functionality.</li>
                         </ul>                        
                     </p>
                     <!-- /Project Description -->
@@ -79,11 +81,10 @@
                             <h3>Technology</h3>
                         </div>
                         <ul class="tags">
-                            <li><a>SQL</a></li>
                             <li><a>Asp.Net Core MVC</a></li>
-                            <li><a>jQuery</a></li>
-                            <li><a>Ajax</a></li>
-                            <li><a>Chartjs</a></li>
+                            <li><a>EF</a></li>
+                            <li><a>Blazor</a></li>
+                            <li><a>SQL</a></li>
                         </ul>
                     </div>
                     <!-- /Technology -->
