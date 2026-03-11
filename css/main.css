@@ -913,6 +913,86 @@ textarea.form-control, textarea.form-control:focus {
 }
 /* --- End Simple Info List --- */
 
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.9fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.about-hero-copy {
+  padding: 30px 32px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fbfd 100%);
+  border: 1px solid #e3edf2;
+  box-shadow: 0 16px 40px rgba(19, 49, 69, 0.06);
+}
+
+.about-hero-kicker {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #067fb1;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-hero-copy h3 {
+  margin: 0 0 14px;
+  font-size: 30px;
+  line-height: 1.25;
+}
+
+.about-hero-copy p {
+  margin: 0 0 18px;
+  color: #666;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.about-hero-points {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.about-hero-points li {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.75;
+}
+
+.about-hero-panel {
+  padding: 22px;
+  border-radius: 22px;
+  background: #0d1f2c;
+  color: #fff;
+  box-shadow: 0 16px 40px rgba(8, 25, 38, 0.18);
+}
+
+.about-contact-item + .about-contact-item {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-contact-item .label {
+  display: block;
+  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-contact-item strong {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
 /* --- Info block with Icon --- */
 .info-block-w-icon {
   margin-bottom: 25px;
@@ -1402,6 +1482,18 @@ textarea.form-control, textarea.form-control:focus {
 /* --- End Resume Refresh --- */
 
 @media only screen and (max-width: 991px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-copy {
+    padding: 24px;
+  }
+
+  .about-hero-copy h3 {
+    font-size: 24px;
+  }
+
   .modern-value-grid {
     grid-template-columns: 1fr;
   }
@@ -3164,9 +3256,10 @@ blockquote {
 .fun-fact-block-value {
   color: #aaa;
   font-size: 36px;
-  line-height: 50px;
+  line-height: 1.2;
   display: block;
   margin: 15px 0 10px;
+  word-break: break-word;
 }
 
 .fun-fact-block-text {
