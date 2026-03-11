@@ -1477,12 +1477,22 @@ textarea.form-control, textarea.form-control:focus {
   margin-right: -7px;
 }
 
+.portfolio-section-title {
+  margin: 10px 0 20px;
+}
+
+.portfolio-featured-grid {
+  margin-bottom: 28px;
+}
+
 .portfolio-grid figure {
   width: 33.33333%;
   float: left;
   padding: 7px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-grid.one-column figure {
@@ -1509,6 +1519,8 @@ textarea.form-control, textarea.form-control:focus {
   position: relative;
   display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio-grid figure a,
@@ -1541,6 +1553,8 @@ textarea.form-control, textarea.form-control:focus {
 .portfolio-item-img {
   position: relative;
   overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background-color: #f2f2f2;
 }
 
 .portfolio-grid figure .portfolio-item-img:after {
@@ -1600,6 +1614,12 @@ textarea.form-control, textarea.form-control:focus {
   padding: 15px 0;
   font-size: 16px;
   position: relative;
+  min-height: 78px;
+  margin: 0;
+}
+
+.portfolio-featured-grid figure .name {
+  font-size: 18px;
 }
 
 .portfolio-grid figure .category {
@@ -1618,6 +1638,10 @@ textarea.form-control, textarea.form-control:focus {
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.portfolio-featured-grid figure .category {
+  opacity: 1;
 }
 
 .portfolio-grid figure:hover i,
@@ -1877,6 +1901,13 @@ textarea.form-control, textarea.form-control:focus {
   position: relative;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.portfolio-inline-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #000;
 }
 
 .project-description {
@@ -2466,6 +2497,10 @@ blockquote {
 
 
 @media only screen and (max-width: 768px) {
+  .portfolio-grid figure .name {
+    min-height: 64px;
+  }
+
   .portfolio-grid figure {
     width: 50%;
   }
@@ -2520,6 +2555,10 @@ blockquote {
 
 
 @media only screen and (max-width: 480px) {
+  .portfolio-grid figure .name {
+    min-height: auto;
+  }
+
   .section-title-block.first-style .section-description {
     margin: 7px 0 0;
     width: 100%;
