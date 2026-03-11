@@ -940,6 +940,88 @@ textarea.form-control, textarea.form-control:focus {
 }
 /* --- End Info block with Icon --- */
 
+.modern-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.modern-value-card {
+  position: relative;
+  min-height: 100%;
+  padding: 24px 22px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbfd 100%);
+  border: 1px solid #e3edf2;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(19, 49, 69, 0.06);
+  overflow: hidden;
+}
+
+.modern-value-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #09aeea 0%, #6ed6ff 100%);
+}
+
+.modern-value-icon {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background: rgba(9, 174, 234, 0.12);
+  color: #09aeea;
+}
+
+.modern-value-icon i {
+  font-size: 28px;
+}
+
+.modern-value-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #067fb1;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.modern-value-card h4 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.modern-value-card p {
+  margin: 0 0 16px;
+  color: #666;
+  line-height: 1.75;
+}
+
+.modern-value-tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modern-value-tags li {
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #eef7fb;
+  color: #067fb1;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 /* --- Info Block with Borders --- */
 .lm-info-block {
   position: relative;
@@ -1241,6 +1323,90 @@ textarea.form-control, textarea.form-control:focus {
 }
 /* --- End Timeline (Education & Experience) --- */
 
+/* --- Resume Refresh --- */
+.resume-role-points {
+  margin: 12px 0 12px 18px;
+  padding: 0;
+}
+
+.resume-role-points li {
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.resume-role-stack {
+  margin-top: 12px;
+}
+
+.resume-role-stack span {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(9, 174, 234, 0.12);
+  color: #067fb1;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.resume-summary-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff 0%, #f7fbfd 100%);
+  border: 1px solid #e3edf2;
+  box-shadow: 0 8px 24px rgba(19, 49, 69, 0.06);
+}
+
+.resume-summary-stat + .resume-summary-stat {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #ebf1f4;
+}
+
+.resume-summary-stat strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #111;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.resume-summary-stat span {
+  display: block;
+  color: #666;
+  line-height: 1.6;
+}
+
+.resume-strength-list {
+  display: grid;
+  gap: 14px;
+}
+
+.resume-strength-item {
+  padding: 16px 18px;
+  background: #fff;
+  border: 1px solid #e6edf2;
+  border-radius: 10px;
+}
+
+.resume-strength-item h4 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.resume-strength-item p {
+  margin: 0;
+  color: #666;
+  line-height: 1.65;
+}
+/* --- End Resume Refresh --- */
+
+@media only screen and (max-width: 991px) {
+  .modern-value-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* --- Skills --- */
 /* Skills Second Style */
 .skills-info.skills-second-style {
@@ -1368,6 +1534,18 @@ textarea.form-control, textarea.form-control:focus {
   padding: 1px 10px;
   margin: 3px 2px;
   font-size: 13px;
+}
+
+.knowledges-resume li {
+  margin: 4px 4px 6px 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.knowledges-resume.muted li {
+  background-color: #eef7fb;
+  color: #067fb1;
 }
 /* --- End of Knowledges --- */
 
